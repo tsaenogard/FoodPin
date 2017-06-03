@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7nf-Jn-Arx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="QY8-r9-qr1">
+            <objects>
+                <tableViewController id="3WK-zx-Uvx" customClass="DiscoverTableViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cVF-Xy-Lc3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4TI-DJ-dxU">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4TI-DJ-dxU" id="Mxz-wA-XWg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3WK-zx-Uvx" id="fKv-Lw-Srl"/>
+                            <outlet property="delegate" destination="3WK-zx-Uvx" id="DDM-8Q-KtA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Discover" id="2zz-z3-ZFg"/>
+                    <connections>
+                        <outlet property="spinner" destination="UK7-xM-85t" id="HKy-Pk-ZlB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oX3-RI-16o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="UK7-xM-85t">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+            </objects>
+            <point key="canvasLocation" x="636" y="-670"/>
+        </scene>
+        <!--Discovers-->
+        <scene sceneID="NuF-Lq-LHV">
+            <objects>
+                <navigationController id="7nf-Jn-Arx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discovers" image="tabBarItem:x0G-7b-kOa:image" id="x0G-7b-kOa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPa-ek-gPE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3WK-zx-Uvx" kind="relationship" relationship="rootViewController" id="CCa-Tb-pzM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUU-kr-Izx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="-670"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBarItem:x0G-7b-kOa:image" width="25" height="19">
+            <mutableData key="keyedArchiveRepresentation">
+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
+bHVjAAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQA
+AAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYA
+AALCbmJOTwAAACYAAALYY3NDWgAAACIAAAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQA
+AANmZGVERQAAACwAAAOKa29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFKUAAAABoA
+AAPiZWxHUgAAACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhUSAAAACQA
+AARsdHJUUgAAACIAAASQZmlGSQAAACgAAASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAAACIA
+AAUuYXJFRwAAACYAAAVQZW5VUwAAACYAAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIA
+bwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIA
+ZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgA
+dQBuAGcAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgE
+OQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAA
+UgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBCACCC
+cl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAA
+UgBHAEIAIABwAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkA
+bABvACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUA
+cgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgAIABSAEcA
+QgAg1QS4XNMMx3xmbpAaACAAUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUwoTCkMOsD
+kwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUA
+bgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO
+Hw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwA
+aQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkA
+IABSAEcAQgAgAHAAcgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAA
+UgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAA
+UgBHAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQA
+AAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAA
+APNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAA
+ACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L/
+//2jAAAD3AAAwGzSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMnKSpa
+TlNJbWFnZVJlcFhOU09iamVjdNIlJiwtV05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJheaMvLCrT
+MjMKNDU2V05TV2hpdGVcTlNDb2xvclNwYWNlRDAgMAAQA4AM0iUmODlXTlNDb2xvcqI4KtIlJjs8V05T
+SW1hZ2WiOypfEA9OU0tleWVkQXJjaGl2ZXLRP0BUcm9vdIABAAgAEQAaACMALQAyADcARgBMAFcAXgBl
+AHIAeQCBAIMAhQCKAIwAjgCXAJwApwCpAKsArQCyALUAtwC5ALsAvQDCANkA2wDdEOsQ8BD7EQQRFxEb
+ESYRLxE0ETwRPxFEEVMRVxFeEWYRcxF4EXoRfBGBEYkRjBGREZkRnBGuEbERtgAAAAAAAAIBAAAAAAAA
+AEEAAAAAAAAAAAAAAAAAABG4A
+</mutableData>
+        </image>
+    </resources>
+</document>
